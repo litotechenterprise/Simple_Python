@@ -1,8 +1,10 @@
 
 print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L:  ")
-add_pepperoni = input("Do you want pepperoni? Y or N: ")
-extra_cheese = input("Do you want extra cheese? Y or N: ")
+size = str(input("What size pizza do you want? S, M, or L:\n")).upper()
+add_pepperoni = str(input("Do you want pepperoni? Y or N:\n")).upper
+extra_cheese = str(input("Do you want extra cheese? Y or N:\n")).upper()
+
+
 def addToTotal(total, num):
     return total + num
 
