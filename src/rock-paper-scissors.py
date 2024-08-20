@@ -1,39 +1,7 @@
 import random
-opts = [
- '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-''',
-
- '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-''',
-
- '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-''']
-
-
-
+from asciiart import RPS
 user_wins = 0
 computer_wins = 0 
-
-#Write your code below this line 👇
-
 
 def return_winner(usr_wins, cpu_wins):
     if usr_wins > cpu_wins:
@@ -55,9 +23,9 @@ def play():
 
     computer = random.randint(0,2)
     print("User chose:")
-    print(opts[user])
+    print(RPS[user])
     print("Computer chose:")
-    print(opts[computer])
+    print(RPS[computer])
 
     if user == 0 and computer == 2:
         user_wins += 1
