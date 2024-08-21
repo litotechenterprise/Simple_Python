@@ -1,5 +1,6 @@
 import random
 from asciiart import RPS
+from clear import clear_terminal
 user_wins = 0
 computer_wins = 0 
 
@@ -13,6 +14,7 @@ def return_winner(usr_wins, cpu_wins):
 
 
 def play():
+    clear_terminal()
     global computer_wins, user_wins
     win = "You Win!"
     lose = "You lose!"  

@@ -1,5 +1,6 @@
 import random
 from asciiart import HANGMANPICS
+from clear import clear_terminal
 
 word_list = ["baboon", "camel"]
 lives = 6
@@ -15,7 +16,7 @@ correct_letter = []
 print(f'{placeholder}\n')
 
 while not gameover:
-    print(f"lives left: {lives}")
+    print(f"lives left: {lives}\n")
     display = ""
 
     print(HANGMANPICS[hangman_len - (lives + 1)])
@@ -31,10 +32,14 @@ while not gameover:
         else:
             display += "_"
 
+
+    clear_terminal()
     if not found:
         lives -= 1
         if lives == 0:
             gameover = True
+            
+            print(HANGMANPICS[-1])
             break
 
     
@@ -43,11 +48,11 @@ while not gameover:
         gameover = True
         break
 
-    print(display)
+    print(f"{display}\n")
 
 
 if len(correct_letter) == len(choosen_word):
-    print("You Won!!!! The word was {choosen_word}\n")
+    print(f"You Won!!!! The word was {choosen_word}\n")
 else:
     print(f'You lost :( The word was {choosen_word}\n')
 
