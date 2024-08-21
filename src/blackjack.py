@@ -1,6 +1,7 @@
 
 import random
 from clear import clear_terminal
+from asciiart import BLACKJACK
 def deal_cards():
     cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
     return random.choice(cards)
@@ -34,6 +35,7 @@ def compare(user_score, dealer_score):
     
 
 def play_blackjack():
+    print(BLACKJACK)
     is_game_over = False
     dict = {"dealer":[],"user":[]}
     d_sum = -1
