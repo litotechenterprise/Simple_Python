@@ -33,7 +33,6 @@ while not is_game_over and lives > 0:
           print("Too Low.")
      print("Guess again.")
 
-
 if Found:
      print("Winner!!!!!!!")
 else:

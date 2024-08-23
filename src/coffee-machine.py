@@ -42,20 +42,17 @@ def printReport(item, qty):
     else:
         print(f'Money: ${qty}')
 
-
 def check_resources(inventory, choice):
     able = True
     for key in hot_drinks[choice]["recipe"]:
         if hot_drinks[choice]["recipe"][key] > inventory[key]:
             print(f"Sorry there isn't enough {key}")
             able = False
-
     return able
 
 def remove_resource(inventory, recipe):
     for key in recipe:
         inventory[key] = inventory[key] - recipe[key]
-
     return inventory
 
 def process_payment(price):
@@ -73,10 +70,6 @@ def process_payment(price):
     return False
 
 
-    
-
-
-
 def start():
     on = True
     machine_inventory = {
@@ -87,11 +80,9 @@ def start():
     }
     while on:
         choice = input("What would you like? (expresso, cappuccino or latte):  ")
-
         if choice == "off":
             on = False
             continue
-
         if choice == "report":
             for key in machine_inventory:
                 printReport(key, machine_inventory[key]) 

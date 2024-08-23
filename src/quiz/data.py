@@ -1,23 +1,17 @@
 question_data =  [
 {
 
-
-
 "text": "The bikini is named after the &quot;Bikini Atoll&quot;, an island where the United States conducted tests on atomic bombs.",
 "answer": "True",
 
 },
 {
 
-
-
 "text": "The Hundred Years&#039; War was fought for more than a hundred years.",
 "answer": "True",
 
 },
 {
-
-
 
 "text": "In Half-Life 2, if you play the zombies&#039; speech in reverse, they actually speak coherent English.",
 "answer": "True",
@@ -26,14 +20,11 @@ question_data =  [
 {
 
 
-
 "text": "In the webcomic Homestuck, the first character introduced is Dave Strider.",
 "answer": "False",
 
 },
 {
-
-
 
 "text": "MacOS is based on Linux.",
 "answer": "False",
@@ -42,14 +33,11 @@ question_data =  [
 {
 
 
-
 "text": "The color of the pills in the Matrix were Blue and Yellow.",
 "answer": "False",
 
 },
 {
-
-
 
 "text": "During Wimbledon, spectators in the grounds can buy the tennis balls that have been used in matches.",
 "answer": "True",
@@ -57,23 +45,17 @@ question_data =  [
 },
 {
 
-
-
 "text": "Martin Luther King Jr. and Anne Frank were born the same year. ",
 "answer": "True",
 
 },
 {
 
-
-
 "text": "The HTML5 standard was published in 2014.",
 "answer": "True",
 
 },
 {
-
-
 
 "text": "Cucumbers are usually more than 90% water.",
 "answer": "True",
