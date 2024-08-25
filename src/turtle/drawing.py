@@ -1,7 +1,6 @@
 import turtle as t
 import random
 
-
 t.colormode(255)
 
 def random_color():
@@ -35,13 +34,8 @@ def draw_spirograh(circle_size=100):
         angle += 5
 
 
+draw_spirograh()
 
 
-
-
-
-
-
-
-# screen = t.Screen()
-# screen.exitonclick()
+screen = t.Screen()
+screen.exitonclick()
